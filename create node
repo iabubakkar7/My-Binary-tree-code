@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+#define SPACE 5;
+
+struct BSTN
+{
+    int data;
+    int count;
+    BSTN * right;
+    BSTN * left;
+};
+
+BSTN *  newnode(int data){
+    BSTN * newn = new BSTN();
+    newn->data=data;
+    newn->left=newn->right=NULL;
+    newn->count = 0;
+    return newn;
+}
+int main(){
+    BSTN * root = new BSTN();
+    root=NULL;
+    root = newnode(34);
+    root = newnode(12);
+    root = newnode(39);
+    root = newnode(2);
+
+    
+}
